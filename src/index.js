@@ -16,7 +16,7 @@ app.use(express.json())
 app.use(cors(corsOptions))
 app.use("/",routeLink)
 
-app.listen(3001,async()=>{
+app.listen(process.env.PORT || 3001,async()=>{
     console.log("running server in the port 3001")
     try {
         await sequelize.sync({force:true})
