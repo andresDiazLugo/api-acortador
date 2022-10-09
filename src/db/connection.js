@@ -3,7 +3,7 @@ require('dotenv').config()
 const link = require('../models/Link')
 
 
-const sequelize = new Sequelize('postgresql://postgres:2kNAf10GPQif3eIHCHaK@containers-us-west-74.railway.app:7664/railway',
+const sequelize = new Sequelize('postgres://postgres:root@localhost:5432/acortador',
 {
     logging:false
 }
